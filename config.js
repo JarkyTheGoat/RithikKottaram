@@ -220,5 +220,6 @@ team: {
 
   repoLabel: "Project Repository",
   repoUrl: "https://github.com/JarkyTheGoat/RithikKottaram"
+}
 };
 
