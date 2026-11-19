@@ -110,8 +110,12 @@ steps: [
     image: "assets/img/image4.jpg"
   },
   {
-    title: "Step 4: Signal Timing Optimization and Results",
-    text: "Reallocate five seconds of green time to the E206 approach and evaluate changes in traffic speed, density, and waiting time.",
+    title: "Module 4: Results Analysis & Communication",
+    bullets: [
+    { text: "Summarize and compare the three simulation scenarios: HDV baseline, 100% CAV, and HDV with revised signal timing." },
+    { text: "Visualize key performance indicators (KPIs), including average speed, traffic density, and waiting time using charts and figures." },
+    { text: "Interpret simulation findings, highlight traffic improvements, discuss limitations, and identify potential future improvements." }
+  ],
     image: "assets/img/image5.jpg"
   }
 ]
@@ -209,6 +213,6 @@ team: {
   ],
 
   repoLabel: "Project Repository",
-  repoUrl: "https://github.com/USERNAME/REPO"
+  repoUrl: "https://github.com/JarkyTheGoat/RithikKottaram"
 }
 
