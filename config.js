@@ -90,7 +90,7 @@ objectivesBullets: [
   "Compare HDV and CAV traffic performance using speed-density analysis under identical traffic conditions.",
   "Implement a five-second green-light extension for the E206 approach while maintaining a 60-second signal cycle.",
   "Evaluate the impact of autonomous vehicles and revised signal timing on traffic speed, density, and waiting time."
-]
+],
   overview: {
    title: "Methodology",
 steps: [
@@ -109,6 +109,11 @@ steps: [
     text: "Replace HDVs with connected autonomous vehicles (CAVs) using Cooperative Adaptive Cruise Control (CACC) and compare traffic speed and density.",
     image: "assets/img/image4.jpg"
   },
+	{
+  title: "Step 4: Results Analysis & Communication",
+  text: "Summarize and compare the three simulation scenarios using KPIs, charts, and figures. Interpret findings, highlight improvements, and discuss limitations and future recommendations.",
+  image: "assets/img/image5.jpg"
+}
   {
     title: "Module 4: Results Analysis & Communication",
     bullets: [
