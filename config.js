@@ -12,10 +12,10 @@ window.SITE_CONFIG = {
     // updated tagline text (big pill)
     tagline: "Course Project: Smart Cities and Communities",
 
-    studentName: "Yohan Mohammadi",
-    program: "Program / Department",
+    studentName: "Rithik Kottaram",
+    program: "SMRTTECH 4SC3 Smart Cities and Communities / W Booth School of Engineering Practice and Technology",
     university: "McMaster University, Canada",
-    email: "your.email@example.com"
+    email: "kottarar@mcmaster.ca"
   },
 
   disclaimer: {
@@ -58,7 +58,7 @@ window.SITE_CONFIG = {
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
+    projectTitle: "Comparative Analysis of Human-Driven (HDV) and Autonomous (AV/CAV) Vehicles: Evaluating Their Impact on Traffic Flow and Road Network Performance Using SUMO",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
@@ -71,142 +71,144 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
-    ],
-
+  "Traffic congestion at Warden Avenue and Lawrence Avenue East in Scarborough, Toronto, motivates the need for improved traffic management.",
+  "Autonomous vehicles using Cooperative Adaptive Cruise Control (CACC) can change vehicle-following behaviour through shorter gaps and coordinated driving.",
+  "Traffic flow is influenced by vehicle behaviour, road geometry, traffic demand, and signal timing at intersections.",
+  "Microscopic SUMO simulation allows HDV and CAV traffic scenarios to be compared under identical road networks, routes, and traffic demand."
+],
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
-    ],
+  "Traffic congestion and low vehicle speeds affect the Warden Avenue and Lawrence Avenue East intersection.",
+  "The impact of autonomous vehicles on traffic flow and vehicle density is uncertain.",
+  "Existing signal timings may not provide sufficient green time for high-demand approaches.",
+  "Changes to vehicle behaviour and signal timing need to be evaluated before real-world implementation."
+],
 
-    objectivesTitle: "Project Objectives",
-    objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
-    ]
-  },
-
+objectivesTitle: "Project Objectives",
+objectivesBullets: [
+  "Develop a realistic roadway network and establish a baseline HDV traffic simulation using SUMO.",
+  "Compare HDV and CAV traffic performance using speed-density analysis under identical traffic conditions.",
+  "Implement a five-second green-light extension for the E206 approach while maintaining a 60-second signal cycle.",
+  "Evaluate the impact of autonomous vehicles and revised signal timing on traffic speed, density, and waiting time."
+]
   overview: {
-    title: "Methodology",
-    steps: [
-      {
-        title: "Step 1: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
-        image: "assets/img/image2.jpg"
-      },
-      {
-				title: "Step 2: Digital Twin Assets Developement (Blender)",
-				text: "Create a 3D railway assets using generative AI and blender.",
-        image: "assets/img/image3.jpg"
-      },
-      {
-				title: "Step 3: Immersive VR Visualization (Unity)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
-        image: "assets/img/image4.jpg"
-      },
-      {
-				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Summarize results using figures, KPIs, and the showcase website.",
-        image: "assets/img/image5.jpg"
-      }
-    ]
+   title: "Methodology",
+steps: [
+  {
+    title: "Step 1: Road Network Development (SUMO)",
+    text: "Develop the Warden Avenue and Lawrence Avenue East road network using GIS data, including lanes, junctions, and road connections.",
+    image: "assets/img/image2.jpg"
   },
-
-  implementation: {
-    title: "Methodology Steps (Demo Modules)",
-    modules: [
-      {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
-        bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
-        ],
-        image: "assets/img/image2.jpg"
-      },
-      {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
-        bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
-        ],
-        image: "assets/img/image3.jpg"
-      },
-      {
-        title: "Module 3: Immersive VR Visualization (Unity)",
-        bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
-        ],
-        image: "assets/img/image4.jpg"
-      },
-      {
-        title: "Module 4: Results & Communication",
-        bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
-        ],
-        image: "assets/img/image5.jpg"
-      }
-    ]
+  {
+    title: "Step 2: Traffic Demand and HDV Baseline (SUMO)",
+    text: "Configure vehicle routes, traffic demand, and signal timings to establish a baseline simulation with 100% human-driven vehicles (HDVs).",
+    image: "assets/img/image3.jpg"
   },
-
-	results: {
-			title: "Results & Potential Improvements",
-			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
-
-			charts: {
-				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
-				},
-				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
-				}
-			},
-
-			discussionTitle: "Discussion",
-			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
-			]
-		},
-
-  team: {
-    title: "Team & Acknowledgments",
-    subtitle:
-      "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
-
-    members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
-    ],
-
-    acknowledgments: [
-      "Workshop: Railway Engineering",
-      "Institution: RoadwayVR University",
-      "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Blender, Unity, Python"
-    ],
-
-    repoLabel: "Project Repository",
-    repoUrl: "https://github.com/USERNAME/REPO"
+  {
+    title: "Step 3: Autonomous Vehicle Comparison (SUMO)",
+    text: "Replace HDVs with connected autonomous vehicles (CAVs) using Cooperative Adaptive Cruise Control (CACC) and compare traffic speed and density.",
+    image: "assets/img/image4.jpg"
+  },
+  {
+    title: "Step 4: Signal Timing Optimization and Results",
+    text: "Reallocate five seconds of green time to the E206 approach and evaluate changes in traffic speed, density, and waiting time.",
+    image: "assets/img/image5.jpg"
   }
-};
+]
+  },
+
+ 
+implementation: {
+  title: "Methodology Steps (Demo Modules)",
+  modules: [
+    {
+      title: "Module 1: Road Network Development (SUMO)",
+      bullets: [
+        { text: "Develop the Warden Avenue and Lawrence Avenue East roadway network using GIS reference data." },
+        { text: "Configure road edges, lane geometry, junctions, and internal connections in SUMO/NETEDIT." },
+        { text: "Verify network connectivity and identify E206, the three-lane incoming approach to junction J1." }
+      ],
+      image: "assets/img/image2.jpg"
+    },
+    {
+      title: "Module 2: Traffic Demand & HDV Baseline (SUMO)",
+      bullets: [
+        { text: "Configure 12 traffic flows with a nominal combined demand of 2,550 vehicles per hour." },
+        { text: "Define vehicle routes, traffic behaviour, and the original 60-second traffic signal cycle." },
+        { text: "Run a 100% Human-Driven Vehicle (HDV) simulation to establish baseline speed and density." }
+      ],
+      image: "assets/img/image3.jpg"
+    },
+    {
+      title: "Module 3: Autonomous Vehicle Simulation (SUMO)",
+      bullets: [
+        { text: "Replace the HDV fleet with 100% Connected Autonomous Vehicles (CAVs)." },
+        { text: "Implement Cooperative Adaptive Cruise Control (CACC) with a 0.6-second desired following gap." },
+        { text: "Compare HDV and CAV traffic behaviour using speed-density measurements under identical demand and road conditions." }
+      ],
+      image: "assets/img/image4.jpg"
+    },
+    {
+      title: "Module 4: Signal Timing Intervention & Analysis",
+      bullets: [
+        { text: "Transfer five seconds of green time to the E206-serving phase at junction J1." },
+        { text: "Maintain the 60-second signal cycle while changing phase durations from 27/3/27/3 to 22/3/32/3 seconds." },
+        { text: "Evaluate changes in mean speed, traffic density, and waiting time against the original HDV baseline." }
+      ],
+      image: "assets/img/image5.jpg"
+    }
+  ]
+},
+
+results: {
+  title: "Results & Potential Improvements",
+  subtitle:
+    "Comparison of three SUMO simulation scenarios at E206: a 100% HDV baseline, a 100% CAV fleet, and an HDV scenario with revised traffic signal timing. Results are based on 36 complete 100-second observations.",
+
+  charts: {
+    left: {
+      title: "Scenario 1 — HDV vs CAV Speed-Density Comparison",
+      src: "assets/img/image6.jpg",
+      alt: "SUMO speed-density comparison between 100% HDV and 100% CAV traffic scenarios."
+    },
+    right: {
+      title: "Scenario 2 — HDV Baseline vs Revised Signal Timing",
+      src: "assets/img/image7.jpg",
+      alt: "SUMO speed-density comparison between original HDV traffic and HDV traffic with revised J1 signal timing."
+    }
+  },
+
+  discussionTitle: "Discussion",
+  discussionBullets: [
+    "The HDV baseline recorded an average speed of 9.114 km/h and a mean density of 73.73 vehicles/km on E206.",
+    "The CAV scenario increased average speed to 10.095 km/h and reduced mean density to 65.63 vehicles/km compared with the HDV baseline.",
+    "The revised signal timing produced the strongest improvement, increasing average speed to 12.622 km/h and reducing density to 50.93 vehicles/km.",
+    "The signal intervention also reduced the total recorded waiting-time sum from 5,114.3 to 3,029.7 seconds across the 36 observations.",
+    "Results suggest that autonomous vehicle behaviour and optimized signal timing can improve traffic conditions, although further testing is needed to evaluate impacts across the entire intersection."
+  ]
+},
+
+team: {
+  title: "Team & Acknowledgments",
+  subtitle:
+    "Group 8 project team responsible for roadway network development, SUMO traffic simulation, autonomous vehicle analysis, and signal timing evaluation.",
+
+  members: [
+    { name: "Rithik Kottaram", role: "Group 8 Project Member" },
+    { name: "Alex Carpen", role: "Group 8 Project Member" },
+    { name: "Marcus Cameron", role: "Group 8 Project Member" },
+    { name: "Shehab Ahmed", role: "Group 8 Project Member" }
+  ],
+
+  acknowledgments: [
+    "Institution: McMaster University, Hamilton, Ontario, Canada",
+    "Study Location: Warden Avenue and Lawrence Avenue East, Scarborough, Toronto",
+    "Simulation Software: Eclipse SUMO 1.26 and NETEDIT",
+    "Geographic Reference: OpenStreetMap contributors",
+    "Analysis: Traffic speed, density, and waiting-time comparisons"
+  ],
+
+  repoLabel: "Project Repository",
+  repoUrl: "https://github.com/USERNAME/REPO"
+}
+
